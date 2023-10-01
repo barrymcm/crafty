@@ -1,0 +1,36 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateCommissionPaymentsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('commission_payments', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('payment_id')->references('id')->on('payments');
+            $table->foreignId('commission_id')->references('id')->on('commissions');
+            $table->integer('owed_to');
+            $table->integer('paid_to');
+
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('commission_payments');
+    }
+}

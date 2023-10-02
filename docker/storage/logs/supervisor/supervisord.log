@@ -1,0 +1,103 @@
+2023-10-02 13:52:40,817 WARN For [program:crafting-emails], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2023-10-02 13:52:40,817 WARN For [program:crafting-emails], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2023-10-02 13:52:40,818 WARN For [program:crafting-emails], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2023-10-02 13:52:40,818 INFO Set uid to user 0 succeeded
+2023-10-02 13:52:40,826 INFO RPC interface 'supervisor' initialized
+2023-10-02 13:52:40,827 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-10-02 13:52:40,829 INFO supervisord started with pid 1
+2023-10-02 13:52:41,838 INFO spawned: 'crafting-emails_00' with pid 9
+2023-10-02 13:52:41,850 INFO spawned: 'crafting-emails_01' with pid 10
+2023-10-02 13:52:41,857 INFO spawned: 'crafting-emails_02' with pid 11
+2023-10-02 13:52:41,872 INFO spawned: 'crafting-reports_00' with pid 12
+2023-10-02 13:52:41,877 INFO spawned: 'crafting-reports_01' with pid 13
+2023-10-02 13:52:41,882 INFO spawned: 'crafting-reports_02' with pid 14
+2023-10-02 13:52:42,885 INFO success: crafting-emails_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 13:52:42,885 INFO success: crafting-emails_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 13:52:42,905 INFO success: crafting-emails_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 13:52:42,906 INFO success: crafting-reports_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 13:52:42,906 INFO success: crafting-reports_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 13:52:42,907 INFO success: crafting-reports_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 13:53:04,972 WARN received SIGTERM indicating exit request
+2023-10-02 13:53:04,977 INFO waiting for crafting-emails_00, crafting-emails_01, crafting-emails_02, crafting-reports_00, crafting-reports_01, crafting-reports_02 to die
+2023-10-02 13:53:07,988 INFO waiting for crafting-emails_00, crafting-emails_01, crafting-emails_02, crafting-reports_00, crafting-reports_01, crafting-reports_02 to die
+2023-10-02 13:53:09,247 INFO stopped: crafting-reports_00 (exit status 0)
+2023-10-02 13:53:09,248 INFO stopped: crafting-reports_01 (exit status 0)
+2023-10-02 13:53:09,249 INFO stopped: crafting-reports_02 (exit status 0)
+2023-10-02 13:53:11,255 INFO waiting for crafting-emails_00, crafting-emails_01, crafting-emails_02 to die
+2023-10-02 13:53:12,363 INFO stopped: crafting-emails_00 (exit status 0)
+2023-10-02 13:53:12,364 INFO stopped: crafting-emails_01 (exit status 0)
+2023-10-02 13:53:12,365 INFO stopped: crafting-emails_02 (exit status 0)
+2023-10-02 14:06:05,679 WARN For [program:crafting-emails], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2023-10-02 14:06:05,679 WARN For [program:crafting-emails], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2023-10-02 14:06:05,680 WARN For [program:crafting-emails], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2023-10-02 14:06:05,680 INFO Set uid to user 0 succeeded
+2023-10-02 14:06:05,687 INFO RPC interface 'supervisor' initialized
+2023-10-02 14:06:05,687 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-10-02 14:06:05,689 INFO supervisord started with pid 1
+2023-10-02 14:06:06,693 INFO spawned: 'crafting-emails_00' with pid 16
+2023-10-02 14:06:06,696 INFO spawned: 'crafting-emails_01' with pid 17
+2023-10-02 14:06:06,697 INFO spawned: 'crafting-emails_02' with pid 18
+2023-10-02 14:06:06,700 INFO spawned: 'crafting-reports_00' with pid 19
+2023-10-02 14:06:06,702 INFO spawned: 'crafting-reports_01' with pid 20
+2023-10-02 14:06:06,705 INFO spawned: 'crafting-reports_02' with pid 21
+2023-10-02 14:06:07,707 INFO success: crafting-emails_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 14:06:07,708 INFO success: crafting-emails_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 14:06:07,709 INFO success: crafting-emails_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 14:06:07,709 INFO success: crafting-reports_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 14:06:07,710 INFO success: crafting-reports_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 14:06:07,710 INFO success: crafting-reports_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 14:08:03,033 WARN received SIGTERM indicating exit request
+2023-10-02 14:08:03,036 INFO waiting for crafting-emails_00, crafting-emails_01, crafting-emails_02, crafting-reports_00, crafting-reports_01, crafting-reports_02 to die
+2023-10-02 14:08:03,175 INFO stopped: crafting-reports_01 (exit status 0)
+2023-10-02 14:08:03,177 INFO stopped: crafting-reports_02 (exit status 0)
+2023-10-02 14:08:03,181 INFO stopped: crafting-reports_00 (exit status 0)
+2023-10-02 14:08:06,194 INFO waiting for crafting-emails_00, crafting-emails_01, crafting-emails_02 to die
+2023-10-02 14:08:07,355 INFO stopped: crafting-emails_01 (exit status 0)
+2023-10-02 14:08:07,356 INFO stopped: crafting-emails_02 (exit status 0)
+2023-10-02 14:08:07,360 INFO stopped: crafting-emails_00 (exit status 0)
+2023-10-02 14:08:31,975 WARN For [program:crafting-emails], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2023-10-02 14:08:31,976 WARN For [program:crafting-emails], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2023-10-02 14:08:31,976 WARN For [program:crafting-emails], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2023-10-02 14:08:31,977 INFO Set uid to user 0 succeeded
+2023-10-02 14:08:31,986 INFO RPC interface 'supervisor' initialized
+2023-10-02 14:08:31,986 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-10-02 14:08:31,988 INFO supervisord started with pid 1
+2023-10-02 14:08:32,997 INFO spawned: 'crafting-emails_00' with pid 16
+2023-10-02 14:08:33,009 INFO spawned: 'crafting-emails_01' with pid 17
+2023-10-02 14:08:33,015 INFO spawned: 'crafting-emails_02' with pid 18
+2023-10-02 14:08:33,029 INFO spawned: 'crafting-reports_00' with pid 19
+2023-10-02 14:08:33,035 INFO spawned: 'crafting-reports_01' with pid 20
+2023-10-02 14:08:33,041 INFO spawned: 'crafting-reports_02' with pid 21
+2023-10-02 14:08:34,044 INFO success: crafting-emails_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 14:08:34,044 INFO success: crafting-emails_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 14:08:34,045 INFO success: crafting-emails_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 14:08:34,045 INFO success: crafting-reports_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 14:08:34,047 INFO success: crafting-reports_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 14:08:34,048 INFO success: crafting-reports_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 14:10:26,359 WARN received SIGTERM indicating exit request
+2023-10-02 14:10:26,362 INFO waiting for crafting-emails_00, crafting-emails_01, crafting-emails_02, crafting-reports_00, crafting-reports_01, crafting-reports_02 to die
+2023-10-02 14:10:26,475 INFO stopped: crafting-reports_00 (exit status 0)
+2023-10-02 14:10:26,476 INFO stopped: crafting-reports_01 (exit status 0)
+2023-10-02 14:10:26,477 INFO stopped: crafting-reports_02 (exit status 0)
+2023-10-02 14:10:26,534 INFO stopped: crafting-emails_00 (exit status 0)
+2023-10-02 14:10:26,535 INFO stopped: crafting-emails_01 (exit status 0)
+2023-10-02 14:10:26,536 INFO stopped: crafting-emails_02 (exit status 0)
+2023-10-02 14:10:52,242 WARN For [program:crafting-emails], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2023-10-02 14:10:52,242 WARN For [program:crafting-emails], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2023-10-02 14:10:52,242 WARN For [program:crafting-emails], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2023-10-02 14:10:52,243 INFO Set uid to user 0 succeeded
+2023-10-02 14:10:52,249 INFO RPC interface 'supervisor' initialized
+2023-10-02 14:10:52,249 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-10-02 14:10:52,251 INFO supervisord started with pid 1
+2023-10-02 14:10:53,253 INFO spawned: 'crafting-emails_00' with pid 16
+2023-10-02 14:10:53,255 INFO spawned: 'crafting-emails_01' with pid 17
+2023-10-02 14:10:53,257 INFO spawned: 'crafting-emails_02' with pid 18
+2023-10-02 14:10:53,261 INFO spawned: 'crafting-reports_00' with pid 19
+2023-10-02 14:10:53,263 INFO spawned: 'crafting-reports_01' with pid 20
+2023-10-02 14:10:53,266 INFO spawned: 'crafting-reports_02' with pid 21
+2023-10-02 14:10:54,267 INFO success: crafting-emails_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 14:10:54,267 INFO success: crafting-emails_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 14:10:54,268 INFO success: crafting-emails_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 14:10:54,269 INFO success: crafting-reports_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 14:10:54,269 INFO success: crafting-reports_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-10-02 14:10:54,270 INFO success: crafting-reports_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

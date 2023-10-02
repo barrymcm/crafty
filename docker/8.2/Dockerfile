@@ -2,7 +2,9 @@ FROM ubuntu:22.04
 
 LABEL maintainer="Taylor Otwell"
 
-ARG WWWGROUP
+ARG PWD=/var/www/html
+ARG WWWUSER=sail
+ARG WWWGROUP=sail
 ARG NODE_VERSION=18
 ARG POSTGRES_VERSION=15
 
@@ -15,6 +17,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN apt-get update && apt-get install -y vim
 RUN apt-get update && apt-get install -y cron
+RUN apt-get update && apt-get install -y redis-server
 
 RUN apt-get update \
     && mkdir -p /etc/apt/keyrings \
@@ -58,7 +61,7 @@ RUN useradd -ms /bin/bash --no-user-group -g $WWWGROUP -u 1337 sail
 COPY start-container /usr/local/bin/start-container
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY php.ini /etc/php/8.2/cli/conf.d/99-sail.ini
-CMD redis-server /var/www/html/docker/redis/redis.conf" ]
+CMD redis-server /var/www/html/docker/redis/redis.conf
 RUN chmod +x /usr/local/bin/start-container
 RUN chmod +x /
 

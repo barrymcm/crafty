@@ -13,3 +13,7 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+/docker/cache/data/dump.rdb
+/docker/storage/logs/supervisor/supervisord.log
+/docker/supervisor/redis_6379.pid
+/docker/supervisor/supervisord.pid

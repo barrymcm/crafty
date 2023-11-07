@@ -1,47 +1,40 @@
 services:
-    laravel.test:
+    php:
         build:
-            context: './docker/8.2'
-            dockerfile: 'Dockerfile'
-            args:
-                WWWGROUP: '${WWWGROUP}'
-        image: 'sail-8.2/app'
-        extra_hosts:
-            - 'host.docker.internal:host-gateway'
-        ports:
-            - '${APP_PORT:-8080}:8080'
-            - '${VITE_PORT:-5174}:${VITE_PORT:-5174}'
-        environment:
-            WWWUSER: '${WWWUSER}'
-            LARAVEL_SAIL: 1
-            XDEBUG_MODE: '${SAIL_XDEBUG_MODE:-off}'
-            XDEBUG_CONFIG: '${SAIL_XDEBUG_CONFIG:-client_host=host..docker.internal}'
-            IGNITION_LOCAL_SITES_PATH: '.'
+            dockerfile: './docker/php/Dockerfile'
+        container_name: 'crafting-php'
         volumes:
             - '.:/var/www/html'
             - './docker/crontabs:/etc/cron.d'
-            - './docker/supervisor/:/var/run/'
             - './docker/supervisor/log:/var/log'
             - './docker/8.2:/etc/supervisor/conf.d'
             - './docker/storage/logs/supervisor:/var/log/supervisor'
         networks:
             - 'sail'
-        depends_on:
-            - 'mysql'
+    nginx:
+        image: 'nginx:latest'
+        container_name: 'crafting-nginx'
+        ports:
+            - '${APP_PORT:-8000}:80'
+        networks:
+            - 'sail'
+        volumes:
+            - './docker/nginx/logs/access.log:/var/log/nginx/access.log'
+            - './docker/nginx/logs/error.log:/var/log/nginx/error.log'
     mysql:
         image: 'mysql/mysql-server:8.0'
+        container_name: 'crafting-mysql'
         ports:
             - '${FORWARD_DB_PORT:-3306}:3306'
         environment:
             MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
-            MYSQL_ROOT_HOST: '%'
+            MYSQL_ROOT_HOST: '${DB_HOST}'
             MYSQL_DATABASE: '${DB_DATABASE}'
             MYSQL_USER: '${DB_USERNAME}'
             MYSQL_PASSWORD: '${DB_PASSWORD}'
-            MYSQL_ALLOW_EMPTY_PASSWORD: '1'
+            MYSQL_ALLOW_EMPTY_PASSWORD: '0'
         volumes:
-            - 'sail-mysql:/var/lib/mysql'
-            - './docker/mysql/create-testing-database.sh:/.docker-entrypoint-initdb.d/10-create-testing-database.sh'
+            - './docker/mysql/:/var/lib/mysql'
         networks:
             - 'sail'
         healthcheck:
